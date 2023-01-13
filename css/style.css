@@ -107,7 +107,7 @@ a {
    line-height: 1.6em;
 }
 
-/* responsive design */
+/* student dashboard responsive */
 @media screen and (max-width: 688px) {
    .dashboard-area {
       grid-template-columns: repeat(1, 1fr);
