@@ -1,0 +1,119 @@
+/*----------------------------------------
+         Google font-family link
+---------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/*----------------------------------------
+               Common css
+---------------------------------------- */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+.container {
+   max-width: 1240px;
+   margin: 0 auto;
+}
+
+img {
+   max-width: 100%;
+}
+
+a {
+   text-decoration: none;
+}
+
+/*----------------------------------------
+      student dashboard section style
+---------------------------------------- */
+#dashboard {
+   padding: 150px 20px;
+}
+
+.dashboard-area {
+   display: grid;
+   grid-template-columns: 250px repeat(1, 1fr);
+   gap: 20px;
+}
+
+.dashboard-menu {
+   background: #fff;
+   border-radius: 10px;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   grid-row: 1/-1;
+}
+
+.profile {
+   padding: 20px 20px 0 20px;
+}
+
+.profile-img {
+   width: 120px;
+   height: 120px;
+   object-fit: cover;
+   border-radius: 50%;
+   display: block;
+   margin: 0 auto;
+}
+
+.profile-name {
+   text-align: center;
+   font-size: 25px;
+   margin: 20px 0;
+}
+
+.menu {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.menu li a {
+   font-size: 18px;
+   color: #000;
+   padding: 10px 20px;
+   font-weight: 500;
+   display: block;
+   transition: 0.5s;
+}
+
+.active {
+   background: #F3F1FF;
+}
+
+.menu li a:hover {
+   background: #F3F1FF;
+}
+
+/* dashboard-details  */
+.dashboard-details {
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   border-radius: 20px;
+   padding: 50px;
+}
+
+.about-me-title {
+   font-size: 30px;
+   font-weight: 600;
+   margin-bottom: 15px;
+}
+
+.about-me-description {
+   font-size: 16px;
+   color: #777;
+   line-height: 1.6em;
+}
+
+/* responsive design */
+@media screen and (max-width: 688px) {
+   .dashboard-area {
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   #dashboard {
+      padding: 20px;
+   }
+}
